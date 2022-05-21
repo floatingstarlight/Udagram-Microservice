@@ -17,7 +17,7 @@ script:
   - docker tag udagram-frontend mengxiaozhao/udagram-frontend:latest
   - docker build -t udagram--api-user ./udagram-user
   - docker tag udagram--api-user mengxiaozhao/udagram-api-user:latest
-  - docker build -t endpoint-feed ./udagram-feed
+  - docker build -t udagram-api-feed ./udagram-feed
   - docker tag udagram-api-feed mengxiaozhao/udagram-api-feed:latest
   - docker build -t reverseproxy ./reverse-proxy
   - docker tag reverseproxy mengxiaozhao/reverseproxy:latest
